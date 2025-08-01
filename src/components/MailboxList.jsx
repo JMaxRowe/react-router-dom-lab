@@ -6,14 +6,16 @@ const MailboxList = ({mailboxes}) => {
         <h1>Mailboxes</h1>
             {mailboxes.map ((mailbox, index) =>{
                 return(
-                    
-                    <Link 
+                    <ul>
+                        <Link 
                     key={mailbox._id} 
                     to={`/mailboxes/${mailbox._id}`}
                     className="mail-box"
                     >
                         <h3>Box #{mailbox._id}</h3>
                     </Link>
+                    </ul>
+                    
                 )
             })}
         </>

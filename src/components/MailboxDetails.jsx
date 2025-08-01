@@ -10,7 +10,7 @@ const MailboxDetails = ({mailboxes}) => {
 
     return(
         <>
-            <h2>Mailbox{selectedBox._id}</h2>
+            <h1>Mailbox{selectedBox._id}</h1>
             <p>Owner: {selectedBox.boxOwner}</p>
             <p>Size: {selectedBox.boxSize}</p>
         </>
