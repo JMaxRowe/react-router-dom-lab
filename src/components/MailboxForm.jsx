@@ -3,7 +3,7 @@ import {useState} from 'react'
 const MailboxForm = ({addbox}) =>{
     function createMailBox(formData) {
         const boxOwner = formData.get("boxOwner")
-        const boxSize = formData.get("boxsize")
+        const boxSize = formData.get("boxSize")
         addbox({boxOwner, boxSize})
     }
     
